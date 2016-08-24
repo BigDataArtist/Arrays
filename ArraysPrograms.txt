@@ -1,0 +1,508 @@
+                                     Some GOOD Arrays Programs for Basic
+                                     
+                                     
+                                     
+                                     package Arrays;
+import java.util.Scanner;
+public class Arrays{
+
+public static void main(String[]args){
+	
+	int new_month[] = new int[4];
+	int month[] = {39,2,3,2,45,3,2,244,4,3,2,3,4,4};
+	new_month[0] = 30;
+	new_month[1] = 10;
+	new_month[2] = 10;
+	new_month[3] = 30;
+	
+	System.out.println("no of days in the month of april are"+" "+new_month[3]+"");
+	System.out.println("no of days in the month at this position is "+" "+month[6]);
+	
+	}
+	
+	
+	
+}
+ class doublearrya extends Arrays{
+	 public static void main(String[]args){
+		 double cal[] = {10.1,31.5,43.5,11.4,32.4,11.3};
+		 double result = 0;
+		 for(int i=0;i<5;i++){
+			 result = result + cal[i];
+		 }
+			 System.out.println("result is"+" "+ result);
+			 System.out.println("the average result is"+" "+result/5);
+		 }
+		 
+	 }
+ 
+ class twodimensionextends extends Arrays{
+	 public static void main(String [] args){
+		 int twodim[][] ;
+		 twodim = new int[3][3];
+		 twodim[0][0] = 22;
+		 twodim[2][1] = 96;
+		 
+		 System.out.println("the array at the position"+" "+twodim[0][0]+" "+ twodim[2][1]+" "+twodim[2][2]);		 
+	
+	 }
+ }
+ 
+ class myforeachloop extends Arrays{
+	 public static void main(String[]args){
+		 String mynames[] ={"aditya","verma","addy","the","riot"};
+		 for(String name:mynames){
+			 System.out.println(name);
+			 
+		 }
+		 
+ }
+	 }
+ 
+ class my2darray extends Arrays{
+	 public static void main(String[]args){
+		  int marks[] = {12,13,15,16,17};
+		  int marks_copy[] = new int[5];
+		  
+		  marks_copy = marks;
+		  
+		  for( int counter = 0;counter<marks.length;counter++){
+			  System.out.println(" the marks vales is " + marks[counter]);
+		  }
+		  for(int counter =0;counter<marks_copy.length;counter++){
+			  System.out.println("the copy looks like same "+ marks_copy[counter]);
+		  }
+
+		
+	 }
+ }
+ class twodims extends Arrays{
+	 public static void main(String [] args){
+		 int my2adrr[][]= new int [3][4];
+		 int k=1;
+		 for(int i = 0;i<3;i++)
+			 for(int j =0;j<4;j++){
+				 my2adrr[i][j]=k;
+				 k++;
+				 }
+		 for(int i = 0;i<3;i++){
+			 for(int j =0;j<4;j++)
+				 System.out.print(my2adrr[i][j]+" "); // so this loop will recall the value of k stored before
+				 System.out.println();
+			 
+				 
+			 }
+	 }
+ }
+ 
+ class dynamic2ds extends Arrays{
+	 public static void main(String[]args){
+		 
+		 int dynamic2d[][][]= new int[3][4][5];
+		 int i,j,k;
+		 for(i=0;i<3;i++)
+			 for(j=0;j<4;j++)
+				 for(k=0;k<5;k++){
+					 dynamic2d[i][j][k] =  i*j*k;
+				 }
+		 for(i=0;i<3;i++){
+			 for(j=0;j<4;j++){
+				 for(k=0;k<5;k++)
+					 System.out.print( dynamic2d[i][j][k]+" ");
+		             System.out.println();
+		 			
+				 }
+	 System.out.println();
+		 
+		 }}
+	 
+	 }
+ 
+ class SampleSwitch {
+	  public static void main(String args[]) {
+	    for(int i=0; i<8; i++)
+	    switch(i) {
+	        case 0:
+	          System.out.println("i is zero.");
+	          break;
+	        case 1:
+	          System.out.println("i is one.");
+	          break;
+	        case 2:
+	          System.out.println("i is two.");
+	          break;
+	        case 3:
+	          System.out.println("i is three.");
+	          break;
+	        case 4:
+	        	System.out.println("this will print beacse value of i is still in the loop");
+	        	break;
+	        case 7:
+	        	System.out.println("this will not print out if its less than i but this is greater hence will print");
+	          break;
+	        default:
+	          System.out.println("Aditya you will win mans.");
+	      }
+	} }
+ class SampleSwitch1 {
+	  public static void main(String[] args) {
+	 int month= 4;
+	 String season=null;
+	    switch(month) {
+	        case 0:
+	        case 1:
+	        case 2:
+	        case 3:
+	          season = "winters";	          
+	          break;
+	        case 4:
+	        case 5:
+	        case 6:
+	        case 7:
+	         season = "spring";
+	          break;
+	        default:
+	          System.out.println("Aditya you will win man.");
+	      }
+	    System.out.println("april is the "+" "+ season+" "+"month");
+	} 
+	  }
+
+class mywhile{
+	public static void main(String[]args){
+		
+		int n = 10;
+		while(n>0){
+		System.out.println("this is the value"+n);
+		n--;
+			
+		}
+	}
+}
+ 
+class prime{
+	public static void main(String[]args){
+		
+		int temp=0;
+		boolean isprime = true;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("the number to enter");
+		int num = sc.nextInt();
+		for(int i = 2;i<=num/i;i++){
+			temp = num%i;
+			if(temp==0){
+				System.out.println(" this will enter the loop first");
+				isprime = false;
+				break;
+			}
+		}
+		
+		System.out.println("This will be printed directly first if the numner is prime\n");
+			if(isprime)
+				System.out.println("number is prime"+ num);
+			else
+			System.out.println("num is not prime"+num);
+		}
+		
+}
+
+ class EvenOdd{
+		public static void main(String[]args){
+			Scanner sc = new Scanner(System.in);
+			
+			boolean iseven = true;
+			int i = 2;
+			while(iseven){
+			System.out.println(" enter the number to check for even and odd\n");
+			int num = sc.nextInt();
+			if(num%i==0){
+				System.out.println("number is even\n"+num);
+				break;
+			}
+			else
+				System.out.println("number is odd \n"+num);
+			}
+		}
+			
+				
+		}
+ 
+ class foreach{
+	 public static void main(String[]args){
+		 int sum=0;
+		 
+		 int arr[] = {1,2,3,4,5,6,7};
+		 for(int x:arr){
+			 sum = sum + x;
+			 if (x== 5)break;
+		 }
+		
+		 System.out.println("sum is "+sum);
+	 }
+ }
+ 		
+ class Search {
+	  public static void main(String args[]) {
+	    int nums[] = { 6, 8, 3, 7, 5, 6, 1, 4 };
+	    int val = 5;
+	    boolean found = false;
+	   for(int x:nums){
+	      if(x == val) {
+	        found = true;
+	        break;
+	} }
+	    if(found)
+	      System.out.println("Value found!");
+	} }
+ 
+class jump{
+	public static void main(String[]args){
+		int i,j;
+		
+		for(i=0;i<10;i++){
+			for(j=i;j<10;j++)
+				System.out.print("*");
+				System.out.println();
+			}
+		for(int k=1;k<10;k++){
+			for(int y=0;y<k;y++){
+				System.out.print("*");
+				}
+			    System.out.println();
+			
+		}
+		}}
+
+class star{
+	public static void main(String [] args)
+	{
+		int i,j;
+		for(i=1;i<=10;i++)
+		{
+		for(j=1;j<i;j++)
+		{
+		System.out.print("*");
+		}
+		System.out.println();
+		}
+		}
+	    }
+
+
+
+
+class box{
+	double width;
+	double length;
+	double height;
+}
+
+class boxDemo{
+	public static void main(String args[]){
+		box mybox = new box();
+		double vol;
+		
+		mybox.width = 10;
+		mybox.height = 20;
+		mybox.length  = 10;
+		
+		vol = mybox.width* mybox.length*mybox.width;
+		System.out.println("vol is "+ vol);
+		
+	}
+}
+
+class Box1 {
+	double width;
+	double length;
+	double height;
+
+ public void volume(){
+	 System.out.println(" volume is ");
+	 System.out.println(width*length*height);
+ }
+ }
+
+class boxDemo1{
+	public static void main(String args[]){
+		Box1 mybox = new Box1();
+		Box1 mybox1 = new Box1();
+		
+		mybox.width = 10;
+		mybox.height = 20;
+		mybox.length = 30;
+		
+		mybox1.width = 10;
+		mybox1.height = 35;
+		mybox1.length = 21;
+		
+		mybox.volume();
+		mybox1.volume();
+	}
+}
+
+
+class box2 {
+	double width;
+	double length;
+	double height;
+	
+ public double volume(){
+	 return width*height*length ;
+ }
+}
+ 
+ class boxDemo2{
+	 public static void main(String args[]){
+		 box2 mybox1 = new box2();
+		 box2 mybox2 = new box2();
+		 double vol;
+		 
+		 mybox1.length = 10;
+		 mybox1.width = 20;
+		 mybox1.height = 10;
+		 
+		 mybox2.length = 20;
+		 mybox2.width = 10;
+		 mybox2.height = 12;
+	   vol = mybox1.volume();
+	   System.out.println("volume is "+vol);
+	   
+	   vol = mybox2.volume();
+	   System.out.println("vol is "+ vol);
+	 
+	 }
+ }
+ 
+ //class parameter{
+	// public static void main(String args[]){
+		 
+		// parameter hello = new parameter();
+		// int x,y,i;
+		 
+		 //public int square(int i){
+			// return i*i;
+	//	 }
+		 
+		// x = hello.square(5);
+//	 }
+ //}'''
+ 
+		 
+ class box3{
+	 double width;
+	 double height;
+	 double length;
+	 
+	public double volume(){
+		return width*length*height;
+	}
+	
+	void setDim(double l,double w, double h){
+		width = w;
+		length = l;
+		height = h;
+	}
+ }
+ class boxdemo3{
+	 
+	 public static void main(String args[]){
+	 box3 mybox = new box3();
+	 box3 mybox1 = new box3();
+	 double vol;
+	 
+	 mybox.setDim(10,12,13);
+	 mybox1.setDim(11,12,14);
+	 vol = mybox.volume();
+	 System.out.println("vol is "+ vol);
+	 
+	 System.out.println(" vol is"+ mybox1.volume());
+ 
+ }
+ }
+ 
+ class boxCon{
+	double width;
+	double length;
+	double height;
+ 
+	boxCon(){
+		System.out.println("box is executed 1");
+		width =10;
+		length = 20;
+		height = 10;
+	}
+	
+	double volume(){
+		return width* length* height;
+	}
+ }
+	class boxdemo4{
+		public static void main(String args[]){
+			boxCon mybox = new boxCon();
+			boxCon mybox1 = new boxCon();
+			double vol;
+			vol = mybox.volume();
+			System.out.println(" vol is "+ vol);
+			vol = mybox1.volume();
+			System.out.println(" vol is "+ vol);
+			
+		}
+	}
+		
+
+
+
+class boxCon1{
+	double width;
+	double length;
+	double height;
+	
+	boxCon1(double w,double l, double h){
+		width = w;
+		length = l;
+		height = h;
+	}
+	
+	double volume(){
+		return length*height*width;
+		
+	}
+}
+
+class boxDemo5{
+	public static void main(String args[]){
+		boxCon1 mybox = new boxCon1(10,12,13);
+		boxCon1 mybox1 = new boxCon1(9,10,12);
+		double vol;
+		
+		System.out.println(" value of width"+mybox.width);
+		vol = mybox.volume();
+		System.out.println(" vol is "+ vol);
+		vol = mybox1.volume();
+		System.out.println("vol is "+ vol);
+		
+	
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
